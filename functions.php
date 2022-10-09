@@ -11,6 +11,7 @@
 	|--------------------------------------------------------------------------
 	|
 	| Please replace 'MY_FORM_NAME' in the below code with the form names that you provided to your elementor form.
+	| If you are adding this in your theme file please don't use PHP opening <?php and Closing ?> tags. 
 	|
 */
 

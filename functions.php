@@ -4,7 +4,7 @@
  * This snippet will help you to automatically generate coupon code after successful submission of elementor form. 
  * This snippet also validates if a user already used the same email address to submit the form if so it will return an error.
  * 
- */
+*/
 /*
 	|--------------------------------------------------------------------------
 	| Important Notes
@@ -83,7 +83,7 @@ function ele_form_new_record($record , $handler) {
 
 /**
  * This action validates if a user already submitted a particular form in elementor. Basically this rule will be applicable only for MY_FORM_NAME
- */
+*/
 
 add_action( 'elementor_pro/forms/validation/email', function( $field, $record, $ajax_handler ) {
 	

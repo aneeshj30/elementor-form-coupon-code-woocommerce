@@ -1,0 +1,12 @@
+//Drag and drop Elementor HTML widget above or below your form. Then copy the below code to that widget. This will output the unique coupon code generated on submit_succes
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    jQuery( document ).ready(function( $ ){
+        jQuery( document ).on('submit_success', function(event, response){
+            document.getElementById("coupon_code").innerHTML = "PERSONAL COUPON CODE: " + response.data['1'].result;
+        
+        });
+    });
+</script>
+<div id="coupon_code"></div>

@@ -3,7 +3,7 @@
  * This code will go to your functions.php file in the parent theme/child theme. Child theme is recommended. 
  * This snippet will help you to automatically generate coupon code after successful submission of elementor form. 
  * This snippet also validates if a user already used the same email address to submit the form if so it will return an error.
- * You can also show the coupon code by just adding the code success-message.html in this reposity. 
+ * You can also show the coupon code by just adding the code success-message.html in this repository. 
  * 
 */
 /*
@@ -78,6 +78,7 @@ function ele_form_new_record($record , $handler) {
 		$coupon->save();
 		$output['result'] = $coupon_code;
 		$handler->add_response_data( true, $output );
+	        // You can also show the coupon code by just adding the code in success-message.html in this repository.
 	}
 	
 }
@@ -117,7 +118,7 @@ add_action( 'elementor_pro/forms/validation/email', function( $field, $record, $
 		if($result[0]->count > 0) {
 			//Error Message. Add your custom message here. This error message will return the email address as well.
 		    $ajax_handler->add_error_message( 'Seems like you have already registered: '.$email_custom_validate.'.' );
-		} 
+		}
 		
     }
 }, 10, 3 );

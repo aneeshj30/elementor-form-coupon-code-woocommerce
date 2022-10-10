@@ -110,7 +110,7 @@ add_action( 'elementor_pro/forms/validation/email', function( $field, $record, $
 		    array_push($_ids, $submission->submission_id);
 		}
 		$ids = join("','",$_ids);
-        // Count the number of submissions by the user
+                // Count the number of submissions by the user
 		$result = $wpdb->get_results("SELECT count(id) as count FROM wp_e_submissions WHERE `form_name` = '".$ele_form_name."' AND id IN ('$ids')");
 		//var_dump($result[0]);
 		if($result[0]->count > 0) {

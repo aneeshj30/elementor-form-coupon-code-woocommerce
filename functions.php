@@ -3,6 +3,7 @@
  * This code will go to your functions.php file in the parent theme/child theme. Child theme is recommended. 
  * This snippet will help you to automatically generate coupon code after successful submission of elementor form. 
  * This snippet also validates if a user already used the same email address to submit the form if so it will return an error.
+ * You can also show the coupon code by just adding the code success-message.html in this reposity. 
  * 
 */
 /*
